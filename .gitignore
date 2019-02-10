@@ -1,0 +1,8 @@
+venv
+*.pyc
+.idea
+chromedriver
+freida_scraping
+*.whl
+.pytest_cache
+*.pickle
