@@ -1,13 +1,18 @@
 #!/usr/bin/env python
 
+import sys
 import os
 from flask_bootstrap import Bootstrap
 from flask import Flask, render_template, jsonify, redirect
 from src.progress import Progress
 from src.crawling_threading import CrawlingThreading
 
-template_folder = os.path.join(os.path.dirname(__file__),'templates')
-app = Flask(__name__, template_folder = template_folder )
+if getattr(sys, 'frozen', False):
+    template_folder = os.path.join(sys._MEIPASS,'templates')
+    app = Flask(__name__, template_folder = template_folder )
+else:
+    template_folder = os.path.join(os.path.dirname(__file__),'templates')
+    app = Flask(__name__, template_folder = template_folder )
 
 Bootstrap(app)
 progress = Progress()

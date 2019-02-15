@@ -15,8 +15,8 @@ def main(browser,url, config):
 def setup_browser():
     # Set up the selenium browser
     options = Options()
-    options.add_argument('--headless')
-    options.add_argument('--disable-gpu')
+    # options.add_argument('--headless')
+    # options.add_argument('--disable-gpu')
 
     prefs = {"profile.default_content_setting_values.geolocation" :2}
     options.add_experimental_option("prefs",prefs)

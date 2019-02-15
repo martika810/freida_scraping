@@ -6,3 +6,6 @@ freida_scraping
 *.whl
 .pytest_cache
 *.pickle
+*.csv
+*.json
+Dockerfile
