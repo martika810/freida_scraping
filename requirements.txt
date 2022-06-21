@@ -22,7 +22,7 @@ kombu==4.2.2.post1
 macholib==1.11
 MarkupSafe==1.1.0
 more-itertools==5.0.0
-numpy==1.16.1
+numpy==1.22.0
 pandas==0.24.1
 pefile==2018.8.8
 pex==1.6.1
